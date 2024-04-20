@@ -1,27 +1,109 @@
 html {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 @media (min-width: 768px) {
-    html {
-        font-size: 16px;
-    }
+  html {
+    font-size: 16px;
+  }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 html {
-    position: relative;
-    min-height: 100%;
+  position: relative;
+  min-height: 100%;
 }
 
 body {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
+}
+
+.logoimage
+{
+    height: 65px;
+}
+.item1 {
+    grid-area: header;
+}
+
+.item3 {
+    grid-area: main;
+}
+
+.item4 {
+    grid-area: right;
+}
+
+.item5 {
+    grid-area: footer;
 }
 
 
-.logoimage {
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'main main main main right right'
+        'footer footer footer footer footer footer';
+    grid-gap: 10px; 
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+    .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+    }
+
+.header_background {
+    background-image: url(/../img/lightgreenbackground.jpeg);
+    background-size: cover;
+    background-position: center;
     height: 100px;
+    width: 100%;
+}
+
+.Main_background {
+    background-image: url(/../img/colorfulbackground.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.nav-item .nav-link.fontcolor_darkbrown {
+    color: rgb(92, 64, 51);
+}
+
+table tr th {
+    border: 1px solid green;
+    text-align: end;
+}
+
+table tr td {
+    border: 1px solid green;
+}
+
+.tableempty {
+    border: 0px solid green;
+}
+
+.productimagesize{
+    width: 500px;
+    height 300px;
+}
+
+.productfont {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(92, 64, 51);
+}
+
+.iframe-video-size {
+    height: 400px;
+    width: 600px;
+    margin-bottom: 100px;
 }

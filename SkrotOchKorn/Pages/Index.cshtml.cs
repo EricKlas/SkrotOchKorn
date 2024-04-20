@@ -1,4 +1,4 @@
-  using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace SkrotOchKorn.Pages
@@ -12,12 +12,13 @@ namespace SkrotOchKorn.Pages
 
         public void OnGet()
         {
+
             MainTitle1 = "Vi erbjuder";
-            MainText1 = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias recusandae vero, a ab fuga\r\n                aspernatur dicta quaerat libero ducimus? Fugit ea corporis dolores. Quaerat adipisci vel repellendus\r\n                blanditiis accusantium?<";
+            MainText1 = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias recusandae vero, a ab fuga aspernatur dicta quaerat libero ducimus? Fugit ea corporis dolores. Quaerat adipisci vel repellendus blanditiis accusantium?";
 
             MainTitle2 = "Kort om oss";
-            MainText2 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, commodi ipsa placeat minima\r\n                praesentium amet distinctio aliquid, maiores architecto sapiente mollitia repellat. Minus molestias\r\n                perferendis aut eligendi ut? Magni, rerum.";
-            
+            MainText2 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, commodi ipsa placeat minima praesentium amet distinctio aliquid, maiores architecto sapiente mollitia repellat. Minus molestias perferendis aut eligendi ut? Magni, rerum.";
+
         }
     }
 }

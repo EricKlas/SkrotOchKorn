@@ -1,15 +1,26 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Start sida";
+    ViewData["Title"] = "Home page";
 }
 
 <div>
-     <h3>@Model.MainTitle1</h3>
+    <div class="grid-container">
 
-     <p>@Model.MainText1</p>
+        <div class="item3 Main_background">
+            <h3>@Model.MainTitle1</h3>
 
-     <h4>@Model.MainTitle2</h4>
+            <p>@Model.MainText1</p>
 
-    <p>@Model.MainText2</p>
+            <h4>@Model.MainTitle2</h4>
+
+            <p>@Model.MainText2</p>
+        </div>
+
+
+        <div class="item4"></div>
+
+
+        <div class="item5"></div>
+    </div>
 </div>

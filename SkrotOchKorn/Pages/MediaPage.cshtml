@@ -1,4 +1,20 @@
 ﻿@page
-@model MediaPageModel
+@model SkrotOchKorn.Pages.MediaPageModel
 @{
 }
+<div>
+    <div class="grid-container">
+
+        <div class="item3 Main_background">
+            <h1>Här har vi videos och bilder på våra maskiner i arbete</h1>
+        @for (int i = 0; i < 3; i++)
+        {
+            <div>
+                <h3>@Model.MediaTitle[i]</h3>
+                    <iframe class="iframe-video-size" src="@Model.MediaLink[i].Url" frameborder="@Model.MediaLink[i].FrameBorder" allow="@Model.MediaLink[i].Allow" allowfullscreen="@Model.MediaLink[i].AllowFullScreen"></iframe>
+            </div>
+        }
+        </div>
+        <div class="item4">right</div>
+    </div>
+</div>

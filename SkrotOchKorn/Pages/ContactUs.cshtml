@@ -2,3 +2,55 @@
 @model SkrotOchKorn.Pages.ContactUsModel
 @{
 }
+<div>
+    <div class="grid-container">
+
+        <div class="item3 Main_background">
+            <form method="post">
+                <label asp-for="@Model.FirstName"></label>
+                <input asp-for="@Model.FirstName" />
+                <br />
+                <label asp-for="@Model.LastName"></label>
+                <input asp-for="@Model.LastName" />
+                <br />
+                <label asp-for="@Model.Email"></label>
+                <input asp-for="@Model.Email" />
+                <br />
+                <label asp-for="@Model.Telephone"></label>
+                <input asp-for="@Model.Telephone" />
+                <br />
+                <label asp-for="@Model.UserType"></label>
+                @foreach (var type in Model.UserTypes)
+                {
+                    <input type="radio" asp-for="@Model.UserType" value="@type" id="@type" />@type
+                }
+                <br />
+                <div id="sizeOptions" style="display:none;">
+                    <label asp-for="@Model.Size"></label>
+                    @foreach (var size in Model.Sizes)
+                    {
+                        <input type="radio" asp-for="@Model.Size" value="@size" />@size
+                    }
+                </div>
+                <br />
+                <label asp-for="@Model.Message"></label>
+                <br />
+                <textarea asp-for="@Model.Message" rows="5" cols="80"></textarea>
+                <br />
+                <label asp-for="@Model.Newsletter"></label>
+                <input type="checkbox" asp-for="@Model.Newsletter" />
+                <br />
+                <label asp-for="@Model.ContactOverPhone"></label>
+                <input type="checkbox" asp-for="@Model.ContactOverPhone" />
+                <br />
+                <button type="submit">Submit</button>
+            </form>
+
+        </div>
+        <script src="~/js/AddUserTypeSizes.js"></script>
+
+        <div class="item4"></div>
+
+    </div>
+    
+</div>
